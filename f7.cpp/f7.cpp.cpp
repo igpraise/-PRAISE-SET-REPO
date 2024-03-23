@@ -18,16 +18,7 @@ void checkError(FILE* file, const char* message) {
     }
 }
 
-// Function to write text file
-void writeTextFile() {
-    FILE* file = fopen("myTextFile.txt", "w");
-    checkError(file, "Error opening text file for writing");
-
-    fprintf(file, "This is line 1.\n");
-    fprintf(file, "This is line 2.\n");
-
-    fclose(file);
-}
+// 
 
 // Function to write binary file
 void writeBinaryFile() {
